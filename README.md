@@ -11,7 +11,7 @@
             --primary-green: #2E8B57;
             --secondary-teal: #20B2AA;
             --accent-blue: #4682B4;
-            --warm-orange: #2E8B57 --#FF6B35;
+            --warm-orange: #FF6B35;
             --light-gray: #f8f9fa;
             --text-dark: #333333;
             --text-light: #666666;
