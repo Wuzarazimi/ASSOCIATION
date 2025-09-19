@@ -380,7 +380,228 @@
             }
         }
         
-        /* Scroll Animations */
+        /* Documentation Styles */
+        .documentation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .doc-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .doc-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .doc-card h4 {
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .doc-card svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--primary-green);
+        }
+        
+        .pathology-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .pathology-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .pathology-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, var(--primary-green), var(--secondary-teal));
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(46,139,87,0.3);
+        }
+        
+        /* Partners Styles */
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .partner-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .partner-logo {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
+        .partner-logo svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+        
+        .donation-progress {
+            background: #f0f0f0;
+            border-radius: 25px;
+            height: 10px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+        
+        .donation-bar {
+            background: linear-gradient(90deg, var(--primary-green), var(--secondary-teal));
+            height: 100%;
+            border-radius: 25px;
+            transition: width 2s ease-in-out;
+        }
+        
+        .financial-transparency {
+            background: linear-gradient(135deg, rgba(46,139,87,0.1), rgba(32,178,170,0.1));
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            border: 2px solid rgba(46,139,87,0.2);
+        }
+        
+        .financial-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .financial-item {
+            text-align: center;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+        }
+        
+        .financial-amount {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-green);
+        }
+        
+        /* Blog Styles */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, var(--primary-green), var(--secondary-teal));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .blog-content {
+            padding: 1.5rem;
+        }
+        
+        .blog-date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .blog-title {
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .blog-excerpt {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        .upcoming-missions {
+            background: linear-gradient(135deg, var(--warm-orange), #F7931E);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .mission-date {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -424,6 +645,9 @@
                 <a href="#projet">Le Projet</a>
                 <a href="#resultats">Résultats</a>
                 <a href="#equipe">Notre Équipe</a>
+                <a href="#documentation">Documentation</a>
+                <a href="#partenaires">Partenaires</a>
+                <a href="#actualites">Actualités</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
@@ -526,7 +750,34 @@
         </div>
     </section>
 
-    <!-- Résultats Section -->
+    <!-- Équipe Section -->
+    <section id="equipe" class="section section-alt">
+        <div class="container">
+            <h3 class="fade-in">Notre Équipe</h3>
+            <div class="team-grid">
+                <div class="team-card fade-in">
+                    <div class="team-role">Président</div>
+                    <h4>PEDENE DERBOUNE NOEL</h4>
+                    <p>Kinésithérapeute et coordinateur du projet</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-role">Équipe Médicale</div>
+                    <h4>Professionnels de Santé</h4>
+                    <p>6 médecins généralistes, 1 urgentiste, 1 rhumatologue, 2 étudiants en médecine</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-role">Kinésithérapeutes</div>
+                    <h4>Spécialistes Rééducation</h4>
+                    <p>2 kinésithérapeutes diplômés et 2 assistants kinésithérapeutes</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-role">Support</div>
+                    <h4>Personnel d'Appui</h4>
+                    <p>Assistants d'accueil, secrétaire, trésorier et équipe logistique</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="resultats" class="section">
         <div class="container">
             <h3 class="fade-in">Résultats du Questionnaire</h3>
@@ -612,6 +863,636 @@
                         <svg viewBox="0 0 24 24"><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22S19,14.25 19,9A7,7 0 0,0 12,2Z"/></svg>
                         <span>Centre de Santé Intégré de Souari</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	    <!-- Équipe Section -->
+    <section id="equipe" class="section section-alt">
+        <div class="container">
+            <h3 class="fade-in">Notre Équipe</h3>
+            <div class="team-grid">
+                <div class="team-card fade-in">
+                    <div class="team-role">Président</div>
+                    <h4>PEDENE DERBOUNE NOEL</h4>
+                    <p>Kinésithérapeute et coordinateur du projet</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-role">Équipe Médicale</div>
+                    <h4>Professionnels de Santé</h4>
+                    <p>6 médecins généralistes, 1 urgentiste, 1 rhumatologue, 2 étudiants en médecine</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-role">Kinésithérapeutes</div>
+                    <h4>Spécialistes Rééducation</h4>
+                    <p>2 kinésithérapeutes diplômés et 2 assistants kinésithérapeutes</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-role">Support</div>
+                    <h4>Personnel d'Appui</h4>
+                    <p>Assistants d'accueil, secrétaire, trésorier et équipe logistique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Documentation Médicale Section -->
+    <section id="documentation" class="section">
+        <div class="container">
+            <h3 class="fade-in">Documentation Médicale</h3>
+            <div class="documentation-grid">
+                <div class="doc-card fade-in">
+                    <h4>
+                        <svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg>
+                        Pathologies Traitées
+                    </h4>
+                    <ul class="pathology-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Arthrose (gonarthrose, coxarthrose)
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Séquelles d'AVC
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Lombalgie et troubles du dos
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Troubles de la marche
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Atrophies musculaires
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Troubles respiratoires liés au vieillissement
+                        </li>
+                    </ul>
+                    <a href="#" class="download-btn">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg>
+                        Télécharger les fiches
+                    </a>
+                </div>
+                
+                <div class="doc-card fade-in">
+                    <h4>
+                        <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,16.5L18,9.5L16.59,8.09L11,13.67L7.91,10.59L6.5,12L11,16.5Z"/></svg>
+                        Exercices à Domicile
+                    </h4>
+                    <p>Programmes d'exercices adaptés pour maintenir et améliorer votre autonomie :</p>
+                    <ul class="pathology-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Renforcement du quadriceps
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Exercices de mobilité articulaire
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Étirements musculo-squelettiques
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Exercices respiratoires
+                        </li>
+                    </ul>
+                    <a href="#" class="download-btn">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M5,20H19V18H5M19,9H15L13,7H9V9H15V11H9V13H15V15H9V17H15L17,15H19M21,1H3C1.89,1 1,1.89 1,3V17A2,2 0 0,0 3,19H21A2,2 0 0,0 23,17V3C23,1.89 22.11,1 21,1Z"/></svg>
+                        Télécharger les guides
+                    </a>
+                </div>
+                
+                <div class="doc-card fade-in">
+                    <h4>
+                        <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M17,13H13V17H11V13H7V11H11V7H13V11H17V13Z"/></svg>
+                        Conseils d'Économie Articulaire
+                    </h4>
+                    <p>Techniques essentielles pour préserver vos articulations au quotidien :</p>
+                    <ul class="pathology-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Gestes et postures correctes
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            École du dos
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Prévention des chutes
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Techniques d'automassage sécurisées
+                        </li>
+                    </ul>
+                    <div style="background: rgba(255,107,53,0.1); padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                        <p style="font-size: 0.9rem; color: var(--text-dark); margin: 0;">
+                            <strong>⚠️ Important :</strong> Évitez l'automassage anarchique sur les rotules et articulations. Nos guides vous enseignent les bonnes techniques.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partenaires et Donateurs Section -->
+    <section id="partenaires" class="section section-alt">
+        <div class="container">
+            <h3 class="fade-in">Nos Partenaires & Donateurs</h3>
+            
+            <!-- Transparence Financière -->
+            <div class="financial-transparency fade-in">
+                <h4 style="text-align: center; color: var(--primary-green); margin-bottom: 2rem;">Transparence Financière - Projet Pilote 2024</h4>
+                <div class="financial-stats">
+                    <div class="financial-item">
+                        <div class="financial-amount">2.202.000</div>
+                        <div>Budget Total (FCFA)</div>
+                    </div>
+                    <div class="financial-item">
+                        <div class="financial-amount">500.000</div>
+                        <div>Don M. DANDJOUMA (FCFA)</div>
+                    </div>
+                    <div class="financial-item">
+                        <div class="financial-amount">306</div>
+                        <div>Patients Traités</div>
+                    </div>
+                    <div class="financial-item">
+                        <div class="financial-amount">589</div>
+                        <div>Séances Réalisées</div>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 1.5rem; font-style: italic;">
+                    Chaque franc contribue directement aux soins des personnes âgées et handicapées
+                </p>
+            </div>
+            
+            <div class="partners-grid">
+                <div class="partner-card fade-in">
+                    <div class="partner-logo">
+                        <svg viewBox="0 0 24 24"><path d="M12,2L13.09,8.26L22,9L17,14L18.18,22L12,19L5.82,22L7,14L2,9L10.91,8.26L12,2Z"/></svg>
+                    </div>
+                    <h4 style="color: var(--primary-green);">Mécènes Principaux</h4>
+                    <p><strong>EL HADJ Mouhamadou DANDJOUMA</strong><br>
+                    Premier Adjoint au Maire de Garoua 1er<br>
+                    Don : 500.000 FCFA + Équipements</p>
+                    
+                    <p><strong>Mr Hamadou SALI</strong><br>
+                    Mise à disposition véhicule</p>
+                    
+                    <p><strong>Autres contributeurs :</strong><br>
+                    Aminatou AHIDJO, Mr Adamou BABAGAROUA, Mr ABDOU RAZACK</p>
+                </div>
+                
+                <div class="partner-card fade-in">
+                    <div class="partner-logo">
+                        <svg viewBox="0 0 24 24"><path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z"/></svg>
+                    </div>
+                    <h4 style="color: var(--primary-green);">Partenaires Institutionnels</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            🏥 <strong>Ministère de la Santé Publique</strong><br>
+                            Autorisation et soutien technique
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            🏥 <strong>Centre de Santé Intégré de Souari (CSIS)</strong><br>
+                            Mme Oumaté Fanne MOUSSA - Cheffe de Centre
+                        </li>
+                        <li style="padding: 0.5rem 0;">
+                            👩‍⚕️ <strong>Dr Nafissatou MBAITCHOUN</strong><br>
+                            Médecin Chef de District Garoua 1er
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="partner-card fade-in">
+                    <div class="partner-logo">
+                        <svg viewBox="0 0 24 24"><path d="M11.5,1L2,6V8H21V6M16,10V17H19V19H2V17H5V10H7V17H9V10H11V17H13V10H15V17H14V10H16Z"/></svg>
+                    </div>
+                    <h4 style="color: var(--primary-green);">Comment Nous Soutenir</h4>
+                    <p>Votre contribution peut changer des vies :</p>
+                    <div style="margin: 1rem 0;">
+                        <p><strong>1.000 FCFA</strong> = 1 séance de kinésithérapie</p>
+                        <p><strong>5.000 FCFA</strong> = Traitement complet d'un patient</p>
+                        <p><strong>50.000 FCFA</strong> = Équipement thérapeutique</p>
+                    </div>
+                    <div style="background: rgba(46,139,87,0.1); padding: 1rem; border-radius: 10px;">
+                        <p style="margin: 0; text-align: center; font-weight: 600;">
+                            📞 Contactez-nous pour devenir partenaire<br>
+                            ou faire un don ciblé
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Actualités Section -->
+    <section id="actualites" class="section">
+        <div class="container">
+            <h3 class="fade-in">Actualités & Missions</h3>
+            
+            <!-- Prochaines Missions -->
+            <div class="upcoming-missions fade-in">
+                <div class="mission-date">PROCHAINE MISSION</div>
+                <h4 style="margin: 0 0 1rem 0; font-size: 1.5rem;">Campagne "Vieillir en Santé" Phase II</h4>
+                <p style="margin: 0; font-size: 1.1rem;">Dates à confirmer - 2025 | Durée prévue : 4 semaines</p>
+                <p style="margin-top: 1rem; opacity: 0.9;">Objectif : 500 patients | Intégration d'un cardiologue dans l'équipe</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card fade-in">
+                    <div class="blog-image">📋</div>
+                    <div class="blog-content">
+                        <div class="blog-date">15 Décembre 2024</div>
+                        <h4 class="blog-title">Rapport Final : Mission "Vieillir en Santé" 2024</h4>
+                        <p class="blog-excerpt">
+                            Découvrez les résultats complets de notre première campagne pilote. 306 patients traités, 589 séances de kinésithérapie réalisées et 100% de satisfaction des bénéficiaires...
+                        </p>
+                        <a href="#" class="read-more">
+                            Lire le rapport complet
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card fade-in">
+                    <div class="blog-image">🩺</div>
+                    <div class="blog-content">
+                        <div class="blog-date">28 Novembre 2024</div>
+                        <h4 class="blog-title">132 Cas d'Hypertension Détectés lors de la Mission</h4>
+                        <p class="blog-excerpt">
+                            Un dépistage inattendu mais crucial : notre équipe médicale a identifié 132 patients hypertendus nécessitant un suivi cardiologique. L'importance du dépistage précoce...
+                        </p>
+                        <a href="#" class="read-more">
+                            En savoir plus
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card fade-in">
+                    <div class="blog-image">⚠️</div>
+                    <div class="blog-content">
+                        <div class="blog-date">25 Novembre 2024</div>
+                        <h4 class="blog-title">Alerte : Les Dangers de l'Automassage Anarchique</h4>
+                        <p class="blog-excerpt">
+                            "Certaines femmes se faisaient piétiner sur la rotule pour soulager la douleur du genou" - Nos observations sur les pratiques dangereuses et nos recommandations...
+                        </p>
+                        <a href="#" class="read-more">
+                            Lire nos conseils
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card fade-in">
+                    <div class="blog-image">🤝</div>
+                    <div class="blog-content">
+                        <div class="blog-date">20 Novembre 2024</div>
+                        <h4 class="blog-title">Partenariat avec les Agents de Santé Communautaires</h4>
+                        <p class="blog-excerpt">
+                            La collaboration avec les ASC a été déterminante dans le succès de la mission. Leur intelligence collective et leur connaissance du terrain ont facilité...
+                        </p>
+                        <a href="#" class="read-more">
+                            Découvrir le partenariat
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card fade-in">
+                    <div class="blog-image">📊</div>
+                    <div class="blog-content">
+                        <div class="blog-date">10 Novembre 2024</div>
+                        <h4 class="blog-title">Le Vieillissement en Afrique : Enjeux et Perspectives</h4>
+                        <p class="blog-excerpt">
+                            "D'ici 2050, le nombre des personnes âgées de 60 ans et plus quadruplera en Afrique" - Analyse des défis démographiques et sanitaires à anticiper...
+                        </p>
+                        <a href="#" class="read-more">
+                            Lire l'analyse complète
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card fade-in">
+                    <div class="blog-image">📅</div>
+                    <div class="blog-content">
+                        <div class="blog-date">05 Novembre 2024</div>
+                        <h4 class="blog-title">Lancement de la Campagne : 316 Inscriptions en 3 Jours</h4>
+                        <p class="blog-excerpt">
+                            Un engouement exceptionnel dès l'ouverture des inscriptions au CSIS. Les Agents de Santé Communautaires ont mobilisé efficacement la population cible...
+                        </p>
+                        <a href="#" class="read-more">
+                            Voir les détails
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Newsletter Subscription -->
+            <div class="results-highlight fade-in" style="margin-top: 3rem;">
+                <h4>Restez Informés de Nos Missions</h4>
+                <p>Recevez les annonces de nos prochaines campagnes et nos actualités médicales</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 1rem;">
+                    <input type="email" placeholder="Votre adresse email" style="padding: 0.75rem 1rem; border: none; border-radius: 25px; width: 250px; max-width: 100%;">
+                    <button style="background: white; color: var(--primary-green); border: none; padding: 0.75rem 1.5rem; border-radius: 25px; font-weight: 600; cursor: pointer;">
+                        S'abonner
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Atrophies musculaires
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Troubles respiratoires liés au vieillissement
+                        </li>
+                    </ul>
+                    <a href="#" class="download-btn">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg>
+                        Télécharger les fiches
+                    </a>
+                </div>
+                
+                <div class="doc-card fade-in">
+                    <h4>
+                        <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,16.5L18,9.5L16.59,8.09L11,13.67L7.91,10.59L6.5,12L11,16.5Z"/></svg>
+                        Exercices à Domicile
+                    </h4>
+                    <p>Programmes d'exercices adaptés pour maintenir et améliorer votre autonomie :</p>
+                    <ul class="pathology-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Renforcement du quadriceps
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Exercices de mobilité articulaire
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Étirements musculo-squelettiques
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Exercices respiratoires
+                        </li>
+                    </ul>
+                    <a href="#" class="download-btn">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M5,20H19V18H5M19,9H15L13,7H9V9H15V11H9V13H15V15H9V17H15L17,15H19M21,1H3C1.89,1 1,1.89 1,3V17A2,2 0 0,0 3,19H21A2,2 0 0,0 23,17V3C23,1.89 22.11,1 21,1Z"/></svg>
+                        Télécharger les guides
+                    </a>
+                </div>
+                
+                <div class="doc-card fade-in">
+                    <h4>
+                        <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M17,13H13V17H11V13H7V11H11V7H13V11H17V13Z"/></svg>
+                        Conseils d'Économie Articulaire
+                    </h4>
+                    <p>Techniques essentielles pour préserver vos articulations au quotidien :</p>
+                    <ul class="pathology-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Gestes et postures correctes
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            École du dos
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Prévention des chutes
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
+                            Techniques d'automassage sécurisées
+                        </li>
+                    </ul>
+                    <div style="background: rgba(255,107,53,0.1); padding: 1rem; border-radius: 10px; margin-top: 1rem;">
+                        <p style="font-size: 0.9rem; color: var(--text-dark); margin: 0;">
+                            <strong>⚠️ Important :</strong> Évitez l'automassage anarchique sur les rotules et articulations. Nos guides vous enseignent les bonnes techniques.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partenaires et Donateurs Section -->
+    <section id="partenaires" class="section section-alt">
+        <div class="container">
+            <h3 class="fade-in">Nos Partenaires & Donateurs</h3>
+            
+            <!-- Transparence Financière -->
+            <div class="financial-transparency fade-in">
+                <h4 style="text-align: center; color: var(--primary-green); margin-bottom: 2rem;">Transparence Financière - Projet Pilote 2024</h4>
+                <div class="financial-stats">
+                    <div class="financial-item">
+                        <div class="financial-amount">2.202.000</div>
+                        <div>Budget Total (FCFA)</div>
+                    </div>
+                    <div class="financial-item">
+                        <div class="financial-amount">500.000</div>
+                        <div>Don M. DANDJOUMA (FCFA)</div>
+                    </div>
+                    <div class="financial-item">
+                        <div class="financial-amount">306</div>
+                        <div>Patients Traités</div>
+                    </div>
+                    <div class="financial-item">
+                        <div class="financial-amount">589</div>
+                        <div>Séances Réalisées</div>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 1.5rem; font-style: italic;">
+                    Chaque franc contribue directement aux soins des personnes âgées et handicapées
+                </p>
+            </div>
+            
+            <div class="partners-grid">
+                <div class="partner-card fade-in">
+                    <div class="partner-logo">
+                        <svg viewBox="0 0 24 24"><path d="M12,2L13.09,8.26L22,9L17,14L18.18,22L12,19L5.82,22L7,14L2,9L10.91,8.26L12,2Z"/></svg>
+                    </div>
+                    <h4 style="color: var(--primary-green);">Mécènes Principaux</h4>
+                    <p><strong>EL HADJ Mouhamadou DANDJOUMA</strong><br>
+                    Premier Adjoint au Maire de Garoua 1er<br>
+                    Don : 500.000 FCFA + Équipements</p>
+                    
+                    <p><strong>Mr Hamadou SALI</strong><br>
+                    Mise à disposition véhicule</p>
+                    
+                    <p><strong>Autres contributeurs :</strong><br>
+                    Aminatou AHIDJO, Mr Adamou BABAGAROUA, Mr ABDOU RAZACK</p>
+                </div>
+                
+                <div class="partner-card fade-in">
+                    <div class="partner-logo">
+                        <svg viewBox="0 0 24 24"><path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z"/></svg>
+                    </div>
+                    <h4 style="color: var(--primary-green);">Partenaires Institutionnels</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            🏥 <strong>Ministère de la Santé Publique</strong><br>
+                            Autorisation et soutien technique
+                        </li>
+                        <li style="padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0;">
+                            🏥 <strong>Centre de Santé Intégré de Souari (CSIS)</strong><br>
+                            Mme Oumaté Fanne MOUSSA - Cheffe de Centre
+                        </li>
+                        <li style="padding: 0.5rem 0;">
+                            👩‍⚕️ <strong>Dr Nafissatou MBAITCHOUN</strong><br>
+                            Médecin Chef de District Garoua 1er
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="partner-card fade-in">
+                    <div class="partner-logo">
+                        <svg viewBox="0 0 24 24"><path d="M11.5,1L2,6V8H21V6M16,10V17H19V19H2V17H5V10H7V17H9V10H11V17H13V10H15V17H14V10H16Z"/></svg>
+                    </div>
+                    <h4 style="color: var(--primary-green);">Comment Nous Soutenir</h4>
+                    <p>Votre contribution peut changer des vies :</p>
+                    <div style="margin: 1rem 0;">
+                        <p><strong>1.000 FCFA</strong> = 1 séance de kinésithérapie</p>
+                        <p><strong>5.000 FCFA</strong> = Traitement complet d'un patient</p>
+                        <p><strong>50.000 FCFA</strong> = Équipement thérapeutique</p>
+                    </div>
+                    <div style="background: rgba(46,139,87,0.1); padding: 1rem; border-radius: 10px;">
+                        <p style="margin: 0; text-align: center; font-weight: 600;">
+                            📞 Contactez-nous pour devenir partenaire<br>
+                            ou faire un don ciblé
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Actualités Section -->
+    <section id="actualites" class="section">
+        <div class="container">
+            <h3 class="fade-in">Actualités & Missions</h3>
+            
+            <!-- Prochaines Missions -->
+            <div class="upcoming-missions fade-in">
+                <div class="mission-date">PROCHAINE MISSION</div>
+                <h4 style="margin: 0 0 1rem 0; font-size: 1.5rem;">Campagne "Vieillir en Santé" Phase II</h4>
+                <p style="margin: 0; font-size: 1.1rem;">Dates à confirmer - 2025 | Durée prévue : 4 semaines</p>
+                <p style="margin-top: 1rem; opacity: 0.9;">Objectif : 500 patients | Intégration d'un cardiologue dans l'équipe</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card fade-in">
+                    <div class="blog-image">📋</div>
+                    <div class="blog-content">
+                        <div class="blog-date">15 Décembre 2024</div>
+                        <h4 class="blog-title">Rapport Final : Mission "Vieillir en Santé" 2024</h4>
+                        <p class="blog-excerpt">
+                            Découvrez les résultats complets de notre première campagne pilote. 306 patients traités, 589 séances de kinésithérapie réalisées et 100% de satisfaction des bénéficiaires...
+                        </p>
+                        <a href="#" class="read-more">
+                            Lire le rapport complet
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card fade-in">
+                    <div class="blog-image">🩺</div>
+                    <div class="blog-content">
+                        <div class="blog-date">28 Novembre 2024</div>
+                        <h4 class="blog-title">132 Cas d'Hypertension Détectés lors de la Mission</h4>
+                        <p class="blog-excerpt">
+                            Un dépistage inattendu mais crucial : notre équipe médicale a identifié 132 patients hypertendus nécessitant un suivi cardiologique. L'importance du dépistage précoce...
+                        </p>
+                        <a href="#" class="read-more">
+                            En savoir plus
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card fade-in">
+                    <div class="blog-image">⚠️</div>
+                    <div class="blog-content">
+                        <div class="blog-date">25 Novembre 2024</div>
+                        <h4 class="blog-title">Alerte : Les Dangers de l'Automassage Anarchique</h4>
+                        <p class="blog-excerpt">
+                            "Certaines femmes se faisaient piétiner sur la rotule pour soulager la douleur du genou" - Nos observations sur les pratiques dangereuses et nos recommandations...
+                        </p>
+                        <a href="#" class="read-more">
+                            Lire nos conseils
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card fade-in">
+                    <div class="blog-image">🤝</div>
+                    <div class="blog-content">
+                        <div class="blog-date">20 Novembre 2024</div>
+                        <h4 class="blog-title">Partenariat avec les Agents de Santé Communautaires</h4>
+                        <p class="blog-excerpt">
+                            La collaboration avec les ASC a été déterminante dans le succès de la mission. Leur intelligence collective et leur connaissance du terrain ont facilité...
+                        </p>
+                        <a href="#" class="read-more">
+                            Découvrir le partenariat
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card fade-in">
+                    <div class="blog-image">📊</div>
+                    <div class="blog-content">
+                        <div class="blog-date">10 Novembre 2024</div>
+                        <h4 class="blog-title">Le Vieillissement en Afrique : Enjeux et Perspectives</h4>
+                        <p class="blog-excerpt">
+                            "D'ici 2050, le nombre des personnes âgées de 60 ans et plus quadruplera en Afrique" - Analyse des défis démographiques et sanitaires à anticiper...
+                        </p>
+                        <a href="#" class="read-more">
+                            Lire l'analyse complète
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card fade-in">
+                    <div class="blog-image">📅</div>
+                    <div class="blog-content">
+                        <div class="blog-date">05 Novembre 2024</div>
+                        <h4 class="blog-title">Lancement de la Campagne : 316 Inscriptions en 3 Jours</h4>
+                        <p class="blog-excerpt">
+                            Un engouement exceptionnel dès l'ouverture des inscriptions au CSIS. Les Agents de Santé Communautaires ont mobilisé efficacement la population cible...
+                        </p>
+                        <a href="#" class="read-more">
+                            Voir les détails
+                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Newsletter Subscription -->
+            <div class="results-highlight fade-in" style="margin-top: 3rem;">
+                <h4>Restez Informés de Nos Missions</h4>
+                <p>Recevez les annonces de nos prochaines campagnes et nos actualités médicales</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 1rem;">
+                    <input type="email" placeholder="Votre adresse email" style="padding: 0.75rem 1rem; border: none; border-radius: 25px; width: 250px; max-width: 100%;">
+                    <button style="background: white; color: var(--primary-green); border: none; padding: 0.75rem 1.5rem; border-radius: 25px; font-weight: 600; cursor: pointer;">
+                        S'abonner
+                    </button>
                 </div>
             </div>
         </div>
