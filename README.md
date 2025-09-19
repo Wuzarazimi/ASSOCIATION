@@ -807,35 +807,6 @@
         </div>
     </section>
 
-    <!-- Équipe Section -->
-    <section id="equipe" class="section section-alt">
-        <div class="container">
-            <h3 class="fade-in">Notre Équipe</h3>
-            <div class="team-grid">
-                <div class="team-card fade-in">
-                    <div class="team-role">Président</div>
-                    <h4>PEDENE DERBOUNE NOEL</h4>
-                    <p>Kinésithérapeute et coordinateur du projet</p>
-                </div>
-                <div class="team-card fade-in">
-                    <div class="team-role">Équipe Médicale</div>
-                    <h4>Professionnels de Santé</h4>
-                    <p>6 médecins généralistes, 1 urgentiste, 1 rhumatologue, 2 étudiants en médecine</p>
-                </div>
-                <div class="team-card fade-in">
-                    <div class="team-role">Kinésithérapeutes</div>
-                    <h4>Spécialistes Rééducation</h4>
-                    <p>2 kinésithérapeutes diplômés et 2 assistants kinésithérapeutes</p>
-                </div>
-                <div class="team-card fade-in">
-                    <div class="team-role">Support</div>
-                    <h4>Personnel d'Appui</h4>
-                    <p>Assistants d'accueil, secrétaire, trésorier et équipe logistique</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
@@ -867,35 +838,7 @@
             </div>
         </div>
     </section>
-	
-	    <!-- Équipe Section -->
-    <section id="equipe" class="section section-alt">
-        <div class="container">
-            <h3 class="fade-in">Notre Équipe</h3>
-            <div class="team-grid">
-                <div class="team-card fade-in">
-                    <div class="team-role">Président</div>
-                    <h4>PEDENE DERBOUNE NOEL</h4>
-                    <p>Kinésithérapeute et coordinateur du projet</p>
-                </div>
-                <div class="team-card fade-in">
-                    <div class="team-role">Équipe Médicale</div>
-                    <h4>Professionnels de Santé</h4>
-                    <p>6 médecins généralistes, 1 urgentiste, 1 rhumatologue, 2 étudiants en médecine</p>
-                </div>
-                <div class="team-card fade-in">
-                    <div class="team-role">Kinésithérapeutes</div>
-                    <h4>Spécialistes Rééducation</h4>
-                    <p>2 kinésithérapeutes diplômés et 2 assistants kinésithérapeutes</p>
-                </div>
-                <div class="team-card fade-in">
-                    <div class="team-role">Support</div>
-                    <h4>Personnel d'Appui</h4>
-                    <p>Assistants d'accueil, secrétaire, trésorier et équipe logistique</p>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!-- Documentation Médicale Section -->
     <section id="documentation" class="section">
         <div class="container">
@@ -1210,80 +1153,7 @@
                 </div>
             </div>
         </div>
-    </section>38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
-                            Atrophies musculaires
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
-                            Troubles respiratoires liés au vieillissement
-                        </li>
-                    </ul>
-                    <a href="#" class="download-btn">
-                        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg>
-                        Télécharger les fiches
-                    </a>
-                </div>
-                
-                <div class="doc-card fade-in">
-                    <h4>
-                        <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,16.5L18,9.5L16.59,8.09L11,13.67L7.91,10.59L6.5,12L11,16.5Z"/></svg>
-                        Exercices à Domicile
-                    </h4>
-                    <p>Programmes d'exercices adaptés pour maintenir et améliorer votre autonomie :</p>
-                    <ul class="pathology-list">
-                        <li>
-                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
-                            Renforcement du quadriceps
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
-                            Exercices de mobilité articulaire
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
-                            Étirements musculo-squelettiques
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
-                            Exercices respiratoires
-                        </li>
-                    </ul>
-                    <a href="#" class="download-btn">
-                        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M5,20H19V18H5M19,9H15L13,7H9V9H15V11H9V13H15V15H9V17H15L17,15H19M21,1H3C1.89,1 1,1.89 1,3V17A2,2 0 0,0 3,19H21A2,2 0 0,0 23,17V3C23,1.89 22.11,1 21,1Z"/></svg>
-                        Télécharger les guides
-                    </a>
-                </div>
-                
-                <div class="doc-card fade-in">
-                    <h4>
-                        <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M17,13H13V17H11V13H7V11H11V7H13V11H17V13Z"/></svg>
-                        Conseils d'Économie Articulaire
-                    </h4>
-                    <p>Techniques essentielles pour préserver vos articulations au quotidien :</p>
-                    <ul class="pathology-list">
-                        <li>
-                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
-                            Gestes et postures correctes
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
-                            École du dos
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
-                            Prévention des chutes
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/></svg>
-                            Techniques d'automassage sécurisées
-                        </li>
-                    </ul>
-                    <div style="background: rgba(255,107,53,0.1); padding: 1rem; border-radius: 10px; margin-top: 1rem;">
-                        <p style="font-size: 0.9rem; color: var(--text-dark); margin: 0;">
-                            <strong>⚠️ Important :</strong> Évitez l'automassage anarchique sur les rotules et articulations. Nos guides vous enseignent les bonnes techniques.
-                        </p>
-                    </div>
-                </div>
+    
             </div>
         </div>
     </section>
